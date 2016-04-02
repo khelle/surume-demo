@@ -1,0 +1,6 @@
+.idea
+surume-data/log
+surume-data/tmp
+vendor
+composer.lock
+composer.phar

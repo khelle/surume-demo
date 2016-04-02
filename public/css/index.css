@@ -1,0 +1,378 @@
+html, body
+{
+    font-size: 12pt;
+    font-family: "Open Sans", Verdana, Tahoma, Arial;
+    padding: 0;
+    margin: 0;
+}
+input, textarea
+{
+    font-size: 10pt;
+    font-family: "Open Sans", Verdana, Tahoma, Arial;
+}
+#surume-panel
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+#surume-loader
+{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 632px;
+    height: 100px;
+    text-align: center;
+}
+#surume-bar
+{
+    display: inline-block;
+    position: relative;
+    left: -1px;
+    border: 1px #000000 solid;
+    border-radius: 6px;
+    width: 232px;
+    height: 20px;
+}
+#surume-progress
+{
+    border: 2px #ffffff solid;
+    border-radius: 6px;
+    width: 0px;
+    height: 16px;
+}
+#surume-status
+{
+    height: 24px;
+}
+#surume-footer
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    margin: 0 10px 5px 0;
+}
+.surume-success
+{
+    color: #000000;
+}
+.surume-failure
+{
+    color: #dd0000;
+}
+.surume-bg-success
+{
+    background-color: #000000;
+}
+.surume-bg-failure
+{
+    background-color: #dd0000;
+}
+#surume-app-panel
+{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    font-size: 10pt;
+    font-family: Verdana, Tahoma, Arial;
+}
+#demo-app-message
+{
+    border: 2px #009900 dashed;
+    border-radius: 6px;
+    background: #eeffee;
+    color: #006600;
+    line-height: 24px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 550px;
+    height: 75px;
+    padding: 10px;
+}
+#demo-app-message label
+{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+#demo-chatbox
+{
+    position: relative;
+    width: 720pt;
+    height: 100%;
+    margin: 0 auto;
+}
+.chat-message
+{
+    position: relative;
+    font-family: "Open Sans";
+    margin: 10px 0;
+    overflow: auto;
+}
+.chat-message .name
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    width: 100pt;
+}
+.chat-message .date
+{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-size: 12px;
+    color: #797979;
+    width: 100pt;
+}
+.chat-message .message
+{
+    position: relative;
+    max-width: 550pt;
+    left: 140pt;
+    float: left;
+    font-size: 12pt;
+}
+.chat-messagebox
+{
+    position: relative;
+    height: 74%;
+    width: 100%;
+    overflow-y: auto;
+}
+.chat-inputbox
+{
+    position: relative;
+    height: 20%;
+    width: 100%;
+}
+.chat-inputbox textarea
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 12pt;
+    border: 0;
+    resize: none;
+    border-top: 1px #21ca00 solid;
+}
+.bulat-link
+{
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    color: #000;
+}
+.bulat-link a
+{
+    color: #000;
+    text-decoration: none;
+}
+.bulat
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
+    border-radius: 110px;
+    -webkit-border-radius: 110px;
+}
+#dalbulat
+{
+    background-color: #ffffff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    z-index: 2;
+    border-radius: 110px;
+    text-align: center;
+    font-size:10px;
+    color:#000;
+    line-height: 90px;
+}
+.luarbulat
+{
+    margin: 0 auto;
+    background: #4FFC38;
+    background: -webkit-radial-gradient(20% 20%, ellipse cover, #00ff00 0%, #21ca00 24%, transparent 74%, transparent 100%);
+    background: radial-gradient(ellipse at 20% 20%, #00FF00 0%, #21CA00 24%, transparent 74%, transparent 100%);
+    border-radius: 110px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#dalbulat span
+{
+    -webkit-animation:color 1.5s linear infinite;
+    -moz-animation:color 1.5s linear infinite;
+    -ms-animation:color 1.5s linear infinite;
+    -o-animation:color 1.5s linear infinite;
+    animation:color 1.5s linear infinite;
+}
+#dalbulat span:nth-child(1)
+{
+    -webkit-animation-delay:0s;
+    -moz-animation-delay:0s;
+    -ms-animation-delay:0s;
+    -o-animation-delay:0s;
+    animation-delay:0s;
+}
+#dalbulat span:nth-child(2)
+{
+    -webkit-animation-delay:.25s;
+    -moz-animation-delay:.25s;
+    -ms-animation-delay:.25s;
+    -o-animation-delay:.25s;
+    animation-delay:.25s;
+}
+#dalbulat span:nth-child(3)
+{
+    -webkit-animation-delay:.45s;
+    -moz-animation-delay:.45s;
+    -ms-animation-delay:.45s;
+    -o-animation-delay:.45s;
+    animation-delay:.45s;
+}
+#dalbulat span:nth-child(4)
+{
+    -webkit-animation-delay:.55s;
+    -moz-animation-delay:.55s;
+    -ms-animation-delay:.55s;
+    -o-animation-delay:.55s;
+    animation-delay:.55s;
+}
+#dalbulat span:nth-child(5)
+{
+    -webkit-animation-delay:.65s;
+    -moz-animation-delay:.65s;
+    -ms-animation-delay:.65s;
+    -o-animation-delay:.65s;
+    animation-delay:.65s;
+}
+#dalbulat span:nth-child(6)
+{
+    -webkit-animation-delay:.75s;
+    -moz-animation-delay:.75s;
+    -ms-animation-delay:.75s;
+    -o-animation-delay:.75s;
+    animation-delay:.75s;
+}
+#dalbulat span:nth-child(7)
+{
+    -webkit-animation-delay:.85s;
+    -moz-animation-delay:.85s;
+    -ms-animation-delay:.85s;
+    -o-animation-delay:.85s;
+    animation-delay:.85s;
+}
+@-webkit-keyframes rotate
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes color
+{
+    0% {
+        color:#fff;
+    }
+    50% {
+        color:transparent;
+    }
+    100% {
+        color:#fff;
+    }
+}
+.bubble
+{
+    position: relative;
+    padding: 5px 10px;
+    background: #8FFF8D;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.bubble:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 26px 10px 0;
+    border-color: transparent #8FFF8D;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -26px;
+    top: 7px;
+}

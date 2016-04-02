@@ -1,0 +1,26 @@
+{
+    "name": "khelle/surume-demo",
+    "type": "project",
+    "description": "Surume demonstration application",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kamil Jamroz"
+        }
+    ],
+    "support": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "khelle/surume": "dev-master"
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    }
+}
